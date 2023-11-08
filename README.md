@@ -14,15 +14,23 @@ conda env create -f ./environments/LF_migration.yml
 ## Pre-Processing
 1) Panaroo
 2) Select 'neutral' genes
-3) Concatenate 'neutral' genes
-4) Remove linked SNP sites
-5) Create index file for each deme or country
+3) activate core_aln environment
+```
+conda activate core_aln
+```
+5) Concatenate 'neutral' genes
+6) Remove linked SNP sites
+7) Create index file for each deme or country
 
 ## Run Asymmetric 2-Deme Model
 1) Many paths are hard-coded so adjust accordingly
 2) Set flags for python script
 3) Create input and output folders for each GPSC/lineage
-4) Asymmetric 2 Deme Script
+4) 3) activate LF_migration environment
+```
+conda activate LF_migration
+```
+5) Asymmetric 2 Deme Script
 ```
    usage: ELFI_2Deme_LDFilts.py [-h] [--gpsc GPSC] [--genes GENES] [--true_data TRUE_DATA] [--country1 COUNTRY1] [--country2 COUNTRY2] [--country3 COUNTRY3]
                              [--country4 COUNTRY4] [--input_dir INPUT_DIR] [--output_dir OUTPUT_DIR] [--evidence EVIDENCE] [--sample SAMPLE] [--bounds BOUNDS]
