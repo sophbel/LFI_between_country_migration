@@ -10,8 +10,8 @@ module load snp-sites/2.5.1--hed695b0_0
 3) Filter bi-allelic SNP sites
 ```
 ###convert to biallelic vcf
-snp-sites -v -o pbp_core.snp.aln.vcf pbp_all_alignment.aln
-bcftools view -m2 -M2 -v snps pbp_core.snp.aln.vcf > pbp_core.snp.aln.biallelic.vcf
+snp-sites -v -o PREFIX_core.snp.aln.vcf PREFIX_all_alignment.aln
+bcftools view -m2 -M2 -v snps PREFIX_core.snp.aln.vcf > PREFIX_core.snp.aln.biallelic.vcf
 ```
 4) Pull Lane IDs from concatenated genes for indexing by country
 ```
