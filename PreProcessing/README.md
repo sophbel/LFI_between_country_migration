@@ -19,3 +19,19 @@ grep ">" PREFIX_all_alignment.aln > tmp.lanes
 ### cut the ids so they only include the lane id removing the index, the >, and .velvet
 cut -f1 -d';' tmp.lanes | cut -f2 -d'>' | cut -f1 -d'.' > core_PREFIX.laneIDS
 ```
+5) Remove all sites with >0.5 r^2 within 1kb
+```
+for f in $(cat gpscs);
+do
+bcftools +prune -l 0.5 -w 1000 ./GPSCs/GPSC${f}/out_gpsc${f}/core_81_gpsc${f}_alignment.snp.aln.biallelic.vcf -o ./RunModel/inputs/GPSC${f}/test.filter_r2_5_1kb.vcf
+done
+```
+where gpscs is <\br>
+```
+2
+5
+8
+10
+22
+26
+```
