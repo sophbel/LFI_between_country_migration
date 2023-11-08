@@ -13,6 +13,7 @@ Repository containing the data for "Estimating Between Country Migration in  Pne
 2) Set flags for python script
 3) Create input and output folders for each GPSC/lineage
 4) Asymmetric 2 Deme Script
+```
    usage: ELFI_2Deme_LDFilts.py [-h] [--gpsc GPSC] [--genes GENES] [--true_data TRUE_DATA] [--country1 COUNTRY1] [--country2 COUNTRY2] [--country3 COUNTRY3]
                              [--country4 COUNTRY4] [--input_dir INPUT_DIR] [--output_dir OUTPUT_DIR] [--evidence EVIDENCE] [--sample SAMPLE] [--bounds BOUNDS]
                              [--suffix SUFFIX] [--sampler SAMPLER] [--prior PRIOR] [--vcf_in VCF_IN]
@@ -40,6 +41,8 @@ optional arguments:
   --sampler SAMPLER     Type of sampler. Either [metropolis] or [nuts] (default metropolis)
   --prior PRIOR         Prior distribution. Either [exponential] or [uniform] (default exponential)
   --vcf_in VCF_IN       Full name of VCF file for input
+
+```
 
 
 
