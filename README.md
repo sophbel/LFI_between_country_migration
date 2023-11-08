@@ -30,7 +30,7 @@ conda activate core_aln
 1) Many paths are hard-coded so adjust accordingly
 2) Set flags for python script
 3) Create input and output folders for each GPSC/lineage
-4) 3) activate LF_migration environment
+4) activate LF_migration environment
 ```
 conda activate LF_migration
 ```
