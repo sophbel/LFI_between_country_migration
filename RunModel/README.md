@@ -19,12 +19,12 @@ mkdir 4Demes
 ```
 cd 2Deme
 mkdir GPSC2
-```*
+``` *
 4) if testing recapture including simulated data with input migration migration<br />
 ```cd GPSC2
 mkdir truth
 mkdir sims
-```*
+``` *
 
 *for each GPSC
 
