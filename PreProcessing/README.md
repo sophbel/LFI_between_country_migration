@@ -1,8 +1,11 @@
 ## Preprocessing so that genes are filtered, concatenated, and indexed.
 
 1) Run Panaroo
-2) Extract neutral genes and concatenate
-3) Install necessary tools: bcftools and snp-sites (on Sanger systems is as follows)
+2) Extract neutral genes and concatenate using
+   ```
+   ./GPS_Panaroo/concatenate_core_genome.py
+   ```
+4) Install necessary tools: bcftools and snp-sites (on Sanger systems is as follows)
 ```
 module load bcftools/1.9--h68d8f2e_9
 module load snp-sites/2.5.1--hed695b0_0 
