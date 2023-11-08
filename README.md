@@ -1,5 +1,9 @@
-# LFI_between_country_migration
-Repository containing the data for "Estimating Between Country Migration in  Pneumococcal Populations"
+# Estimating Between Country Migration in Pneumococcal Populations using Likelihood-free inference 
+Repository containing the data for "Estimating Between Country Migration in  Pneumococcal Populations". This repository utilizes the Engine For Likelihood Free Inference and coalescent simulation software msprime.
+```
+ELFI: https://elfi.readthedocs.io/en/latest/
+msprime: https://tskit.dev/msprime/docs/stable/CITATION.html
+```
 
 ## Setup environments
 1) Set up environment to concatenate neutral genes of choice.
