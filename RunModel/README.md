@@ -15,16 +15,16 @@ cd outputs
 mkdir 2Deme
 mkdir 4Demes
 ```
-4) create folders for each GPSC<br />
+4) create folders for each GPSC*<br />
 ```
 cd 2Deme
 mkdir GPSC2
-``` *
-4) if testing recapture including simulated data with input migration migration<br />
+```
+4) if testing recapture including simulated data with input migration migration*<br />
 ```cd GPSC2
 mkdir truth
 mkdir sims
-``` *
+``` 
 
 *for each GPSC
 
