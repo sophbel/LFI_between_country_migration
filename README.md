@@ -1,13 +1,23 @@
 # LFI_between_country_migration
 Repository containing the data for "Estimating Between Country Migration in  Pneumococcal Populations"
 
+## Setup environments
+1) Set up environment to concatenate neutral genes of choice.
+```
+conda env create -f ./environments/core_aln.yml
+```
+2) Set up environment to run msprime and and all other dependencies within the migration parameter inference scripts.
+```
+conda env create -f ./environments/LF_migration.yml
+```
+   
 ## Pre-Processing
 1) Panaroo
 2) Select 'neutral' genes
 3) Concatenate 'neutral' genes
 4) Remove linked SNP sites
 5) Create index file for each deme or country
-   
+
 ## Run Asymmetric 2-Deme Model
 1) Many paths are hard-coded so adjust accordingly
 2) Set flags for python script
