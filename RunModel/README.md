@@ -9,17 +9,17 @@ To create the necessary output folders follow the steps below:
 
 1) create output folder
 ```mkdir outputs```
-2) create folders for each model type\
-```cd outputs
-mkdir 2Deme
-mkdir 4Demes```
-3) create folders for each GPSC\
+2) create folders for each model type
+```cd outputs```
+```mkdir 2Deme```
+```mkdir 4Demes```
+3) create folders for each GPSC
 ```cd 2Deme
-mkdir GPSC2```*
-4) if testing recapture including simulated data with input migration migration\
-```cd GPSC2
-mkdir truth
-mkdir sims```*
+```mkdir GPSC2```*
+4) if testing recapture including simulated data with input migration migration
+```cd GPSC2```
+```mkdir truth```
+```mkdir sims```*
 
 *for each GPSC
 
