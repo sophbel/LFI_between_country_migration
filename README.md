@@ -1,4 +1,4 @@
-# Estimating Between Country Migration in Pneumococcal Populations using Likelihood-free inference 
+# Estimating Between Country Migration in Pneumococcal Populations using Likelihood-free Inference 
 Repository containing the data for "Estimating Between Country Migration in  Pneumococcal Populations". This repository utilizes the Engine For Likelihood Free Inference and coalescent simulation software msprime.
 ```
 ELFI: https://elfi.readthedocs.io/en/latest/
