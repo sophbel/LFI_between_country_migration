@@ -16,9 +16,11 @@ conda env create -f ./environments/LF_migration.yml
 ```
 # Overview of all steps. For specifics navigate to each folder.  
 ## Pre-Processing
-1) Panaroo
-2) Select 'neutral' genes
-3) activate core_aln environment
+1) Run panaroo using annotation files to create gene alignments. Panaroo paralellizes very well so multi-threading is a good option. We ran with the sensitive mode.
+   Documentation: https://gtonkinhill.github.io/panaroo/#/ <br\>
+   Manuscript: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02090-4 
+3) Select 'neutral' genes
+4) activate core_aln environment
 ```
 conda activate core_aln
 ```
