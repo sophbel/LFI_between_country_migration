@@ -14,7 +14,7 @@ conda env create -f ./environments/core_aln.yml
 ```
 conda env create -f ./environments/LF_migration.yml
 ```
-   
+# Overview of all steps. For specifics navigate to each folder.  
 ## Pre-Processing
 1) Panaroo
 2) Select 'neutral' genes
@@ -23,8 +23,14 @@ conda env create -f ./environments/LF_migration.yml
 conda activate core_aln
 ```
 5) Concatenate 'neutral' genes
-6) Remove linked SNP sites
-7) Create index file for each deme or country
+```
+./PreProcessing/GPS_Panaroo/concatenate_core_genome.py
+```
+7) Remove linked SNP sites
+8) Create index file for each deme or country using the outputs from the previous step as described in ./PreProcessing/README.md
+```
+./PreProcessing/indexalignments_trailHead_GPSCs.R
+```
 
 ## Run Asymmetric 2-Deme Model
 1) Many paths are hard-coded so adjust accordingly
