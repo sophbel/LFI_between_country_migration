@@ -34,7 +34,7 @@ conda activate core_aln
 ./PreProcessing/indexalignments_trailHead_GPSCs.R 
 ```
 
-## Run Asymmetric 2-Deme Model
+## Run Asymmetric Models
 1) Many paths are hard-coded so adjust accordingly
 2) Set flags for python script
 3) Create input and output folders for each GPSC/lineage
@@ -42,7 +42,9 @@ conda activate core_aln
 ```
 conda activate LF_migration
 ```
-5) Asymmetric 2 Deme Script
+5) Run Models
+   Model 1) Asymmetric 2 Deme Model <br>
+   Script Usage <br> 
 ```
    usage: ELFI_2Deme_LDFilts.py [-h] [--gpsc GPSC] [--genes GENES] [--true_data TRUE_DATA] [--country1 COUNTRY1] [--country2 COUNTRY2] [--country3 COUNTRY3]
                              [--country4 COUNTRY4] [--input_dir INPUT_DIR] [--output_dir OUTPUT_DIR] [--evidence EVIDENCE] [--sample SAMPLE] [--bounds BOUNDS]
@@ -74,5 +76,41 @@ optional arguments:
 
 ```
 
+Model 2) Symmetric 4 Deme Model <br>
+Script Usage <br>
+```
+usage: ELFI_4Deme_Symmetric.py [-h] [--gpsc GPSC] [--genes GENES] [--true_data TRUE_DATA] [--country1 COUNTRY1] [--country2 COUNTRY2] [--country3 COUNTRY3]
+                               [--country4 COUNTRY4] [--input_dir INPUT_DIR] [--output_dir OUTPUT_DIR] [--evidence EVIDENCE] [--sample SAMPLE]
+                               [--bounds BOUNDS] [--suffix SUFFIX] [--sampler SAMPLER] [--prior PRIOR] [--epistasis EPISTASIS]
 
+Running this code to test different GPSC and number of neutral genes impact on migration parameter estimates
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --gpsc GPSC           Add a GPSC number from options 2,8,5,22,26,10 (default 8)
+  --genes GENES         Add number of genes either 81 or 355 (default 81)
+  --true_data TRUE_DATA
+                        Add either [simulated] or [true] to test with simulated data or get the truth (default simulated)
+  --country1 COUNTRY1   Add [sa] for South Africa, [mal] for Malawi, [gam] for Gambia, or [ken] for Kenya (default sa)
+  --country2 COUNTRY2   Add [sa] for South Africa, [mal] for Malawi, [gam] for Gambia, or [ken] for Kenya (default mal)
+  --country3 COUNTRY3   Add [sa] for South Africa, [mal] for Malawi, [gam] for Gambia, or [ken] for Kenya (default ken)
+  --country4 COUNTRY4   Add [sa] for South Africa, [mal] for Malawi, [gam] for Gambia, or [ken] for Kenya (default gam)
+  --input_dir INPUT_DIR
+                        Path just before GPSCX/ in which the core alignment file is (default local)
+  --output_dir OUTPUT_DIR
+                        Path just before 2Deme/outputs/ inclusive to write summary stats and plots (default local)
+  --evidence EVIDENCE   Number of evidence points for BOLFI (default 4000)
+  --sample SAMPLE       Number of samples for BOLFI (default 10000)
+  --bounds BOUNDS       Upper bound for parameter (default 3)
+  --suffix SUFFIX       Suffix string (default "")
+  --sampler SAMPLER     Type of sampler. Either [metropolis] or [nuts] (default metropolis)
+  --prior PRIOR         Prior distribution. Either [exponential] or [uniform] (default exponential)
+  --epistasis EPISTASIS
+                        Indicate whether epistatic sites within 1kb with >0.5r2 have been removed
+
+Have fun!
+```
+
+## Post-Processing
+Navigate to the post processing folder where you can use the output posterior migration parameter files to calculate the relative mean migration, directional migration, and summary tables for each deme set and GPSC.
 
