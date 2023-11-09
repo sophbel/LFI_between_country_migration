@@ -29,7 +29,7 @@ conda activate core_aln
 7) Remove linked SNP sites
 8) Create index file for each deme or country using the outputs from the previous step as described in ./PreProcessing/README.md
 ```
-./PreProcessing/indexalignments_trailHead_GPSCs.R
+./PreProcessing/indexalignments_trailHead_GPSCs.R 
 ```
 
 ## Run Asymmetric 2-Deme Model
