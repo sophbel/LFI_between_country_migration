@@ -3,7 +3,7 @@
 2) The four country (4 Deme) model estimates symmetric migration parameters between 4 countries
 ## The usage and flags for each model are the same however only the country 1 and country 2 flags are specified in the 2 deme model as it only takes these into account.
 Note: Don't forget to change the paths to match your folder structure as many paths are currently hard coded into the script. 
-
+```
 usage: ELFI_2Deme_LDFilts.py [-h] [--gpsc GPSC] [--genes GENES] [--true_data TRUE_DATA] [--country1 COUNTRY1] [--country2 COUNTRY2] [--country3 COUNTRY3]
                              [--country4 COUNTRY4] [--input_dir INPUT_DIR] [--output_dir OUTPUT_DIR] [--evidence EVIDENCE] [--sample SAMPLE] [--bounds BOUNDS]
                              [--suffix SUFFIX] [--sampler SAMPLER] [--prior PRIOR] [--vcf_in VCF_IN]
@@ -31,3 +31,4 @@ optional arguments:
   --sampler SAMPLER     Type of sampler. Either [metropolis] or [nuts] (default metropolis)
   --prior PRIOR         Prior distribution. Either [exponential] or [uniform] (default exponential)
   --vcf_in VCF_IN       Full name of VCF file for input
+```
