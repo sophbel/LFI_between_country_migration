@@ -115,5 +115,5 @@ Have fun!
 Navigate to the post processing folder where you can use the output posterior migration parameter files to calculate the relative mean migration, directional migration, and summary tables for each deme set and GPSC.
 
 ## Data availability
-Metadata is included in the Metadata folder. ENA accession numbers will be included in an additional data file after publication. 
+Metadata is included in the Metadata folder. ENA accession numbers are included in the additional data file "ERRs.csv". 
 
